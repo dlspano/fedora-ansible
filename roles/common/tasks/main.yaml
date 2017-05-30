@@ -1,0 +1,10 @@
+---
+- name: Install common packages
+  dnf:
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - gnome-tweak-tool
+    - meld
+    - tmux
+    - vim

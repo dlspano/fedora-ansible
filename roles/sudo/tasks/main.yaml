@@ -1,0 +1,10 @@
+---
+name: Setup passwordless sudo
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: '^%{{ sudo-user }} ALL='
+    line: '%{{ sudo-user }} ALL=(ALL) NOPASSWD: ALL'
+    # Validate the sudoers file before saving
+    validate: 'visudo -cf %s'
+   when: sudo-user is defined
