@@ -1,0 +1,10 @@
+---
+- name: Setup Fedora
+  hosts: localhost
+  become: true
+  roles:
+    - role: sudo
+    - role: common
+    - role: google-chrome
+    - role: wine
+    - role: play-on-linux
