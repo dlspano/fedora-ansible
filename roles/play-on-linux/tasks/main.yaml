@@ -1,0 +1,5 @@
+---
+- name: Ensure PlayOnLinux is installed
+  dnf:
+    name: playonlinux
+    state: present
