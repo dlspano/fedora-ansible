@@ -1,5 +1,5 @@
 ---
-name: Install Google Chrome
-dnf:
-  name: '{{ chrome-url }}'
-  state: present
+- name: Install Google Chrome
+  dnf:
+    name: '{{ chrome_url }}'
+    state: present
