@@ -1,0 +1,7 @@
+- name: Ensure common network tools are installed
+  dnf:
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - nmap
+    - wireshark

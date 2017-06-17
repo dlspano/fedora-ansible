@@ -10,6 +10,7 @@
     - role: jabber-clients
     - role: golang
     - role: google-chrome
+    - role: network-tools
     - role: python
     - role: wine
     - role: play-on-linux
