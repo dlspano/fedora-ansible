@@ -6,6 +6,7 @@
     - role: sudo
     - role: common
     - role: ansible
+    - role: docker
     - role: google-chrome
     - role: wine
     - role: play-on-linux
