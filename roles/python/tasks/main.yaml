@@ -1,0 +1,6 @@
+- name: Ensure python packages are installed
+  dnf:
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - python3-ipython

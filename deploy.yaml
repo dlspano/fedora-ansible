@@ -7,7 +7,9 @@
     - role: common
     - role: ansible
     - role: docker
+    - role: golang
     - role: google-chrome
+    - role: python
     - role: wine
     - role: play-on-linux
     - role: virtualbox
