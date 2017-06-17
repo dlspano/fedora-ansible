@@ -1,0 +1,9 @@
+---
+- name: Install common Ansible packages
+  dnf:
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - ansible
+    - ansible-lint
+    - yamllint
