@@ -7,6 +7,7 @@
     - role: common
     - role: ansible
     - role: docker
+    - role: jabber-clients
     - role: golang
     - role: google-chrome
     - role: python

@@ -1,0 +1,8 @@
+- name: Ensure jabber client packages are installed
+  dnf:
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - mcabber
+    - pidgin
+    - pidgin-guifications
