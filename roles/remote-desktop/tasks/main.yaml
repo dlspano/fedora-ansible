@@ -1,0 +1,10 @@
+---
+- name: Ensure remmina is installed
+  dnf:
+    name: remmina
+    state: present
+
+- name: Ensure vino is not installed
+  dnf:
+    name: vino
+    state: absent

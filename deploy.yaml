@@ -12,6 +12,8 @@
     - role: google-chrome
     - role: network-tools
     - role: python
+    - role: remote-desktop
     - role: wine
     - role: play-on-linux
     - role: virtualbox
+    - role: vm-tools

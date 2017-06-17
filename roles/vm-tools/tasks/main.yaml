@@ -1,0 +1,7 @@
+- name: Ensure vm tools are installed
+  dnf:
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - qemu-img
+    - vagrant
